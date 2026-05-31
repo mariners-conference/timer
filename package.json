@@ -12,6 +12,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.4.2"
+    "@astrojs/svelte": "^8.1.2",
+    "astro": "^6.4.2",
+    "carbon-components-svelte": "^0.107.1",
+    "carbon-icons-svelte": "^13.11.0",
+    "svelte": "^5.56.0",
+    "tone": "^15.1.22",
+    "typescript": "^6.0.3"
   }
 }
