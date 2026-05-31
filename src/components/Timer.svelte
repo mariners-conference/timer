@@ -137,6 +137,12 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1.25rem;
+		/* Let children shrink below their min-content so the nowrap timer digits
+		   size against the card width instead of widening the layout. */
+		min-width: 0;
+	}
+	.timer > :global(*) {
+		min-width: 0;
 	}
 	.timer.collapsed {
 		min-height: calc(100vh - 6.5rem);
