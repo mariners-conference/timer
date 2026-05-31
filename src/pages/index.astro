@@ -1,6 +1,11 @@
 ---
 import "carbon-components-svelte/css/g100.css";
 import Timer from "../components/Timer.svelte";
+
+const title = "LT Timer";
+const description = "発表時間を計測するシンプルなカウントアップタイマー。";
+const pageUrl = new URL(import.meta.env.BASE_URL, Astro.site);
+const ogImage = new URL(`${import.meta.env.BASE_URL}og-image.png`, Astro.site);
 ---
 
 <html lang="ja">
@@ -10,7 +15,27 @@ import Timer from "../components/Timer.svelte";
 		<link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Timer</title>
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={pageUrl} />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content={title} />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={pageUrl} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content={title} />
+		<meta property="og:locale" content="ja_JP" />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
 	</head>
 	<body>
 		<main class="app">
