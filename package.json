@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "timer",
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@10.33.4",
@@ -10,6 +10,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "generate:og": "node scripts/og-image.mjs",
     "astro": "astro"
   },
   "dependencies": {
@@ -20,5 +21,9 @@
     "svelte": "^5.56.0",
     "tone": "^15.1.22",
     "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@types/node": "^25.9.1"
   }
 }

@@ -22,3 +22,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# generated OG image (produced at build time from public/og-image.svg)
+public/og-image.png
+
+# OG image fonts are committed (see .ogfonts/), but the fontconfig cache is not
+.ogfonts/cache/
